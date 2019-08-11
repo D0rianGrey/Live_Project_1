@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase {
 
     @Test
-    public void loginAsBankManager() throws InterruptedException {
+    public void loginAsBankManager() {
 
         log.debug("Inside Login Test");
         driver.findElement(By.cssSelector(OR.getProperty("bmlBtn_CSS"))).click();

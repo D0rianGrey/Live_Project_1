@@ -38,8 +38,7 @@ public class TestBase {
         if (driver == null) {
 
             try {
-                fis = new FileInputStream(
-                        System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");
+                fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -51,8 +50,7 @@ public class TestBase {
             }
 
             try {
-                fis = new FileInputStream(
-                        System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\OR.properties");
+                fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\OR.properties");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -71,14 +69,14 @@ public class TestBase {
 
             } else if (config.getProperty("browser").equals("chrome")) {
 
-                System.setProperty("webdriver.chrome.driver",
-                        System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+                //System.setProperty("webdriver.chrome.driver",
+                //System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
                 driver = new ChromeDriver();
                 log.debug("Chrome Launched !!!");
             } else if (config.getProperty("browser").equals("ie")) {
 
-                System.setProperty("webdriver.ie.driver",
-                        System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
+                //System.setProperty("webdriver.ie.driver",
+                //System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
                 driver = new InternetExplorerDriver();
 
             }
@@ -86,8 +84,7 @@ public class TestBase {
             driver.get(config.getProperty("testsiteurl"));
             log.debug("Navigated to : " + config.getProperty("testsiteurl"));
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
-                    TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
         }
 
     }
