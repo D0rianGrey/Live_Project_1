@@ -140,9 +140,9 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Live_Project_1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Live_Project_1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.w2a.testcases.LoginTest&quot;&gt;
         &lt;methods&gt;
@@ -192,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAsBankManager')
 data.setCell(0, 2, 'com.w2a.testcases.LoginTest')
-data.setCell(0, 3, 3116);
+data.setCell(0, 3, 108);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 108 ms</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -230,11 +230,11 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginAsBankManager</span>
-                <span class="method-start">12874 ms</span>
+                <span class="method-start">11932 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16074 ms</span>
+                <span class="method-start">12084 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,7 @@
+21:56:30,713 | DEBUG | 48    | main                             | setUp                            | TestBase.java                    | devpinoyLogger                   | Config file loaded !!!
+21:56:30,719 | DEBUG | 61    | main                             | setUp                            | TestBase.java                    | devpinoyLogger                   | OR file loaded !!!
+21:56:36,901 | DEBUG | 77    | main                             | setUp                            | TestBase.java                    | devpinoyLogger                   | Chrome Launched !!!
+21:56:38,252 | DEBUG | 87    | main                             | setUp                            | TestBase.java                    | devpinoyLogger                   | Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:56:42,431 | DEBUG | 12    | main                             | loginAsBankManager               | LoginTest.java                   | devpinoyLogger                   | Inside Login Test
+21:56:42,534 | DEBUG | 14    | main                             | loginAsBankManager               | LoginTest.java                   | devpinoyLogger                   | Login successfully executed 
+21:56:43,283 | DEBUG | 102   | main                             | tearDown                         | TestBase.java                    | devpinoyLogger                   | Text execution completed !!!
